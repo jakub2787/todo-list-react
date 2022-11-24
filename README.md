@@ -1,7 +1,16 @@
 # To-Do-List
-
 ## DEMO
 https://jakub2787.github.io/todo-list-react/
+## Preview
+![Example screenshot](./images/gif.gif)
+
+## Technologies 
+- HTML
+- CSS
+- JAVASCRIPT
+- BEM
+- React.js
+- Flex, Grid
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
