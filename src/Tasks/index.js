@@ -1,21 +1,26 @@
 import "./style.css";
 
-const Tasks = ({id, tasks, hideDoneTasks}) => (
-    <ul className="tasks">    
-    {tasks.map(task => (
+const Tasks = ({ id, tasks, hideDone }) => (
+    <ul className="tasks">
+        {tasks.map(task => (
             <li
-            key={id} 
-            className={`tasks__item ${task.done && hideDoneTasks ? "tasks__item--hidden" : "" }`}
+                key={id}
+                className={`tasks__item ${task.done && hideDone ? "tasks__item--hidden" : ""}`}
             >
-                         <button className=" 
-            tasks__button--done">{task.done ? "✓" : ""}</button>
+                <button className="tasks__button tasks__button--done">
+                    {task.done ? "✓" : ""}
+                </button>
                 <span className={`${task.done ? "tasks__item--done" : ""}`}>
-                   {task.content}
+                    {task.content}
                 </span>
-                <button className=" tasks__button--remove">🗑️
-                </button>   
+                <button
+                    className="tasks__button tasks__button--remove">🗑️
+                </button>
             </li>
         ))}
     </ul>
 );
+
+
+
 export default Tasks;

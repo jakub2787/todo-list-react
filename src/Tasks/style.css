@@ -21,9 +21,7 @@
 .tasks__item--hidden {
     display: none;
 }
-
-.tasks__button--remove {
-    background-color: hsl(0, 100%, 50%);
+.tasks__button {
     border: none;
     padding: 0px;
     min-height: 30px;
@@ -31,14 +29,13 @@
     transition: 1s;
 }
 
+.tasks__button--remove {
+    background-color: hsl(0, 100%, 50%);
+}
+
 .tasks__button--done {
     background-color: hsl(120, 100%, 25%);
-    border: none;
     color: white;
-    padding: 0px;
-    min-width: 30px;
-    min-height: 30px;
-    transition: 1s;
 }
 
 .tasks__button--done:hover {

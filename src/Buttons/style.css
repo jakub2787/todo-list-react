@@ -1,4 +1,4 @@
-.buttons {
+.buttons__button {
     border: none;
     padding: 15px;
     color: teal;
@@ -6,14 +6,14 @@
     transition: 1s;
 }
   
-.buttons:hover {
+.buttons__button {
     color: hsl(180, 100%, 35%);
 }
   
-.buttons:disabled {
+.buttons__button:disabled {
     color: #ccc;
 }
-.header__buttons {
+.buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
