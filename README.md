@@ -2,7 +2,7 @@
 ## DEMO
 https://jakub2787.github.io/todo-list-react/
 ## Preview
-![Example screenshot](./images/gif.gif)
+![gif](https://user-images.githubusercontent.com/116658312/205492095-f53817db-130b-4fcb-a1bf-2a2870227619.gif)
 
 ## Technologies 
 - HTML
