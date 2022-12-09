@@ -12,7 +12,7 @@ function App() {
   });
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState(() => {
-    const save = JSON.parse(localStorage.getItem("tasks")); return save ||
+    const saveTasks = JSON.parse(localStorage.getItem("tasks")); return saveTasks ||
       [
         { id: 1, content: "Przejśc na Reacta", done: true },
         { id: 2, content: "Zjeść obiad", done: true },
