@@ -4,14 +4,20 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Main from "./Main";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  });
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "Przejśc na Reacta", done: true },
-    { id: 2, content: "Zjeść obiad", done: true },
-  ]);
+  const [tasks, setTasks] = useState(() => {
+    const save = JSON.parse(localStorage.getItem("tasks")); return save ||
+      [
+        { id: 1, content: "Przejśc na Reacta", done: true },
+        { id: 2, content: "Zjeść obiad", done: true },
+      ]
+  });
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -59,6 +65,7 @@ function App() {
           title="Lista zadań"
           body={
             <Tasks
+
               tasks={tasks}
               hideDone={hideDone}
               removeTask={removeTask}
