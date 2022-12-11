@@ -7,17 +7,14 @@ import Main from "./Main";
 import { useEffect, useState } from 'react';
 
 function App() {
+  const [hideDone, setHideDone] = useState(false);
+  const [tasks, setTasks] =
+    useState(JSON.parse(localStorage.getItem("tasks"))
+      || []);
+
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
-  });
-  const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(() => {
-    const saveTasks = JSON.parse(localStorage.getItem("tasks")); return saveTasks ||
-      [
-        { id: 1, content: "Przejśc na Reacta", done: true },
-        { id: 2, content: "Zjeść obiad", done: true },
-      ]
-  });
+  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -35,7 +32,7 @@ function App() {
 
       return task;
     }));
-  }
+  };
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
@@ -43,6 +40,7 @@ function App() {
       done: true
     })));
   };
+
   const addNewTask = (content) => {
     setTasks(tasks => [
       ...tasks,
@@ -53,8 +51,9 @@ function App() {
       },
     ]);
   };
+
   return (
-    <div className="App">
+    <div className="container">
       <Main>
         <Header title="Lista zadań" />
         <Section
@@ -65,12 +64,12 @@ function App() {
           title="Lista zadań"
           body={
             <Tasks
-
               tasks={tasks}
               hideDone={hideDone}
               removeTask={removeTask}
               toggleTaskDone={toggleTaskDone}
-            />}
+            />
+          }
           extraHeaderContent={
             <Buttons
               setAllDone={setAllDone}
