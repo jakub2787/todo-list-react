@@ -3,7 +3,7 @@ import Header from "./Header";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
-import Main from "./Main";
+import Container from "./Container";
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="container">
-      <Main>
+      <Container>
         <Header title="Lista zadań" />
         <Section
           title="Dodaj nowe zadanie"
@@ -77,7 +77,7 @@ function App() {
               hideDone={hideDone}
               toggleHideDone={toggleHideDone} />}
         />
-      </Main>
+      </Container>
     </div>
   );
 };
