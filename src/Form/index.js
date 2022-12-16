@@ -6,14 +6,14 @@ const Form = ({ addNewTask }) => {
 
     const inputRef = useRef(null);
 
-    const focusInput = () => {
-        inputRef.current.focus();
-    };
+    const focusInput = () => inputRef.current.focus();
+
 
     const onFormSubmit = (event) => {
         event.preventDefault();
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
+        focusInput();
     }
     return (
         <StyledForm onSubmit={onFormSubmit}>
