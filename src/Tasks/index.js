@@ -20,13 +20,12 @@ const Tasks = ({ id, tasks, hideDone, removeTask, toggleTaskDone }) => (
                 <Button
                     remove
                     onClick={() => removeTask(task.id)}
-                >🗑
+                >
+                    🗑
                 </Button>
             </Item>
         ))}
     </List>
 );
-
-
 
 export default Tasks;
