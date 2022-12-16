@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: flex-end;
   margin-left: 45%;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
       display: grid;
       grid-template-rows: 1fr 1fr;
       margin-left: 0;
@@ -18,14 +18,19 @@ export const Wrapper = styled.div`
 export const StyledButtons = styled.button`
     border: none;
     padding: 15px;
-    color: hsl(180, 100%, 25%);
+    color: ${({theme}) => theme.color.teal};
     background-color: transparent;
-    transition: 1s;
+    transition: filter 0.3s;
 
     &:hover {
-        color: hsl(180, 100%, 35%);   
+        filter: brightness(110%);
     }
-    ${({disabled}) => disabled && css`
-        color: #ccc;
-    `}
+
+    &:active {
+        filter: brightness(120%);
+    }
+    
+    &:disabled {
+        color: ${({theme}) => theme.color.silver};
+    }
 `;
