@@ -11,38 +11,49 @@ export const Item = styled.li`
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     padding: 10px;
-    border-bottom: 1px solid hsl(0, 1%, 82%);
+    border-bottom: 1px solid ${({theme}) => theme.color.alto};
     align-items: center;
 
     ${({ hidden }) => hidden && css`
       display: none;
     `}
 `;
+
 export const Content = styled.span`
     ${({ done }) => done && css`
         text-decoration: line-through;
 `}
 `;
+
 export const Button = styled.button`
     border: none;
     padding: 0px;
     height: 30px;
     width: 30px;
     transition: 1s;
-    color: white;
+    color: ${({theme}) => theme.color.white};
 
     ${({toggleDone}) => toggleDone && css`
-        background-color: hsl(120, 61%, 34%);
+        background-color: ${({theme}) => theme.color.forestGreen};
 
         &:hover {
-            background-color: hsl(120, 61%, 39%); 
+            filter: brightness(110%);
+        }
+
+        &:active {
+            filter: brightness(120%);
         }
     `}
+
     ${({remove}) => remove && css`
-        background-color: hsl(348, 83%, 47%);
+        background-color: ${({theme}) => theme.color.crimson};
 
         &:hover {
-            background-color: hsl(348, 83%, 55%);
+            filter: brightness(110%);
+        }
+
+        &:active {
+            filter: brightness(120%);
         }
     `}
 `;
