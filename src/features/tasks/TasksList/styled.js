@@ -11,7 +11,7 @@ export const Item = styled.li`
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     padding: 10px;
-    border-bottom: 1px solid ${({theme}) => theme.color.alto};
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
     align-items: center;
 
     ${({ hidden }) => hidden && css`
@@ -31,10 +31,10 @@ export const Button = styled.button`
     height: 30px;
     width: 30px;
     transition: 1s;
-    color: ${({theme}) => theme.color.white};
+    color: ${({ theme }) => theme.color.white};
 
-    ${({toggleDone}) => toggleDone && css`
-        background-color: ${({theme}) => theme.color.forestGreen};
+    ${({ toggleDone }) => toggleDone && css`
+        background-color: ${({ theme }) => theme.color.forestGreen};
 
         &:hover {
             filter: brightness(110%);
@@ -45,8 +45,8 @@ export const Button = styled.button`
         }
     `}
 
-    ${({remove}) => remove && css`
-        background-color: ${({theme}) => theme.color.crimson};
+    ${({ remove }) => remove && css`
+        background-color: ${({ theme }) => theme.color.crimson};
 
         &:hover {
             filter: brightness(110%);

@@ -5,4 +5,5 @@ const Container = ({children}) => (
         {children}
     </Main>
 );
+
 export default Container;

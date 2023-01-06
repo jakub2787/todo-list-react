@@ -6,20 +6,20 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid ${({theme}) => theme.color.alto};
+    border: 1px solid ${({ theme }) => theme.color.alto};
 `;
 
 export const StyledButton = styled.button`
-    background-color: ${({theme}) => theme.color.teal};
+    background-color: ${({ theme }) => theme.color.teal};
     padding: 10px;
-    color: ${({theme}) => theme.color.white};
+    color: ${({ theme }) => theme.color.white};
     border: none;
     transition: 0.3s;
 

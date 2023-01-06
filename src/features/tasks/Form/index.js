@@ -14,7 +14,7 @@ const Form = ({ addNewTask }) => {
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
         focusInput();
-    }
+    };
     return (
         <StyledForm onSubmit={onFormSubmit}>
             <Input
@@ -28,4 +28,5 @@ const Form = ({ addNewTask }) => {
         </StyledForm>
     );
 }
+
 export default Form;

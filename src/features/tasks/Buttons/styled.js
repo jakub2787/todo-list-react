@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: flex-end;
   margin-left: 45%;
 
-  @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
       display: grid;
       grid-template-rows: 1fr 1fr;
       margin-left: 0;
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
 export const StyledButtons = styled.button`
     border: none;
     padding: 15px;
-    color: ${({theme}) => theme.color.teal};
+    color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
     transition: filter 0.3s;
 
@@ -31,6 +31,6 @@ export const StyledButtons = styled.button`
     }
     
     &:disabled {
-        color: ${({theme}) => theme.color.silver};
+        color: ${({ theme }) => theme.color.silver};
     }
 `;
