@@ -45,7 +45,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${({ remove }) => remove && css`
+    ${({ removeTasks }) => removeTasks && css`
         background-color: ${({ theme }) => theme.color.crimson};
 
         &:hover {
