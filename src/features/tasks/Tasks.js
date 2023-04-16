@@ -4,6 +4,7 @@ import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
+import ExampleTasks from "./ExampleTasks";
 
 function Tasks() {
 
@@ -14,6 +15,7 @@ function Tasks() {
         <Section
           title="Dodaj nowe zadanie"
           body={<Form />}
+          extraHeaderContent={<ExampleTasks />}
         />
         <Section
           title="Lista zadań"
