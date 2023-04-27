@@ -1,12 +1,12 @@
 import Form from "./Form";
-import Header from "../../common/Header";
+import Header from "../../../common/Header";
 import TasksList from "./TasksList";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Container from "../../common/Container";
+import Section from "../../../common/Section";
+import Container from "../../../common/Container";
 import ExampleTasks from "./ExampleTasks";
 
-function Tasks() {
+const TasksPage = () => {
 
   return (
     <div className="container">
@@ -27,4 +27,4 @@ function Tasks() {
   )
 };
 
-export default Tasks;
+export default TasksPage;

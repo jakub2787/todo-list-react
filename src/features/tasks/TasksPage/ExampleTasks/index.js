@@ -1,7 +1,7 @@
 import { StyledButtons } from "../Buttons/styled";
 import { Wrapper } from "../Buttons/styled";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchExampleTasks, selectIsLoading } from "../tasksSlice";
+import { fetchExampleTasks, selectIsLoading } from "../../tasksSlice";
 
 const ExampleTasks = () => {
 
