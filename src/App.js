@@ -1,19 +1,11 @@
 import Tasks from './features/tasks/TasksPage';
-import { HashRouter, NavLink, Switch, Route, Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import AuthorPage from './features/author';
+import Navigation from './common/Navigation';
+
 export const App = () => (
     <HashRouter>    
-        <nav>
-            <ul>
-                <li>
-                    <NavLink to="/">Zadania</NavLink>
-                </li>
-                <li>
-                    <NavLink to="./autor">O autorze</NavLink>
-                </li>
-            </ul>
-        </nav>
-
+        <Navigation />
         <Switch>
             <Route path="/autor">
                 <AuthorPage />
