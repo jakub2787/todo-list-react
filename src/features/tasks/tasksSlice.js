@@ -55,6 +55,16 @@ export const selectIsEveryTasksDone = state => selectTasks(state).every(({ done 
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectIsLoading = (state) => selectTasksState(state).loading === true;
 
-export const getTaskById = (state, taskId) => selectTasks(state).find(({ id }) => id === taskId);
+export const selectTaskByQuery = (state, query) => {
+    const tasks = selectTasks(state);
+    if (!query || query.trim() === "") {
+        return tasks;
+    }
+    return tasks.filter(({ content }) =>
+        content.toUpperCase().includes(query.trim().toUpperCase()));
+};
+
+export const getTaskById = (state, taskId) =>
+    selectTasks(state).find(({ id }) => id === taskId);
 
 export default tasksSlice.reducer;
