@@ -26,7 +26,9 @@ export const NavigationLink = styled(NavLink).attrs(() => ({
   font-size: 17px;
 
   &.active {
-    filter: brightness(120%);
     font-weight: 700;
+  }
+  &:hover {
+    transform: scale(1.04);
   }
 `;
