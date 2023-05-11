@@ -1,20 +1,21 @@
-# To-Do-List
-📝 adding tasks
+# 📝 To-Do-List
 
-📝 removing tasks
+✔️ adding tasks
 
-📝 download sample tasks
+✔️ removing tasks
 
-📝 marking as done one, several or all
+✔️ download sample tasks
 
-📝 hide all marked as done
+✔️ marking as done one, several or all
 
-📝 searching for a task
+✔️ hide all marked as done
 
-## DEMO
-https://jakub2787.github.io/todo-list-react/
+✔️ searching for a task
 
-## Description
+## 🕹️ DEMO
+[To Do List](https://jakub2787.github.io/todo-list-react/)
+
+## 📖 Description
 This is my website project. The "task list" application is designed to create and edit a to-do list. Enter your responsibilities and manage them!
 
 ## Preview
