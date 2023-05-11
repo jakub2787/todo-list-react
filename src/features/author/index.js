@@ -24,13 +24,13 @@ const AuthorPage = () => {
                         <Paragraph>Interesuję się <strong>technologią</strong> a dokładniej mówiąc komputerem, jego wszystkimi podzespołami
                             takimi jak karty
                             graficzne, procesory, płyty główne i wiele więcej. Lubię również w wolnym czasem pływać na basenie oraz
-                            pograć w gry</Paragraph>
+                            pograć w gry.</Paragraph>
                     </>
                 }
             >
             </Section>
         </Container>
     )
-}
+};
 
 export default AuthorPage;
