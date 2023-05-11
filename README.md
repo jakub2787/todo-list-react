@@ -1,16 +1,36 @@
 # To-Do-List
+📝 adding tasks
+
+📝 removing tasks
+
+📝 download sample tasks
+
+📝 marking as done one, several or all
+
+📝 hide all marked as done
+
+📝 searching for a task
+
 ## DEMO
 https://jakub2787.github.io/todo-list-react/
+
+## Description
+This is my website project. The "task list" application is designed to create and edit a to-do list. Enter your responsibilities and manage them!
+
 ## Preview
-![gif](https://user-images.githubusercontent.com/116658312/205492095-f53817db-130b-4fcb-a1bf-2a2870227619.gif)
+![gif](https://github.com/jakub2787/todo-list-react/assets/116658312/976c6136-cb5f-405d-aee9-16ba53f3ca1f)
 
 ## Technologies 
 - HTML
 - CSS
 - JAVASCRIPT
-- BEM
+- Media Queries
 - React.js
 - Flex, Grid
+- Styled-Components
+- Redux, Redux-Saga
+- React Router
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
