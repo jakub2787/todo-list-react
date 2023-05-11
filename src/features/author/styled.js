@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Paragraph = styled.p`
+export const StyledContainer = styled.div`
   padding: 15px;
   border: 3px solid;
   margin: 20px;
