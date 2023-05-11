@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom/cjs/react-router-dom"
 
 export const List = styled.ul`
     list-style: none;
@@ -56,4 +57,9 @@ export const Button = styled.button`
             filter: brightness(120%);
         }
     `}
+`;
+
+export const LinkStyled = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.teal}
 `;

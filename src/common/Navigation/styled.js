@@ -17,16 +17,16 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 `;
 
-export const NavigationLink = styled(NavLink)`
-  color: ${({theme}) => theme.color.white};
+export const NavigationLink = styled(NavLink).attrs(() => ({
+  activeClassName: "active",
+}))`
+  color: ${({ theme }) => theme.color.white};
   border: none;
   text-decoration: none;
   font-size: 17px;
 
-  &:visited {
-    filter: brightness(110%);
-  }
-  &:active {
+  &.active {
     filter: brightness(120%);
+    font-weight: 700;
   }
 `;

@@ -9,21 +9,19 @@ import ExampleTasks from "./ExampleTasks";
 const TasksPage = () => {
 
   return (
-    <div className="container">
-      <Container>
-        <Header title="Lista zadań" />
-        <Section
-          title="Dodaj nowe zadanie"
-          body={<Form />}
-          extraHeaderContent={<ExampleTasks />}
-        />
-        <Section
-          title="Lista zadań"
-          body={<TasksList />}
-          extraHeaderContent={<Buttons />}
-        />
-      </Container>
-    </div>
+    <Container>
+      <Header title="Lista zadań" />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form />}
+        extraHeaderContent={<ExampleTasks />}
+      />
+      <Section
+        title="Lista zadań"
+        body={<TasksList />}
+        extraHeaderContent={<Buttons />}
+      />
+    </Container>
   )
 };
 
