@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchExampleTasks, selectIsLoading } from "../../tasksSlice";
 
 const ExampleTasks = () => {
-
     const dispatch = useDispatch();
     const loading = useSelector(selectIsLoading);
 
@@ -16,9 +15,7 @@ const ExampleTasks = () => {
             >
                 {loading ? "Ładowanie zadań" : "Pobierz przykładowe zadania"}
             </StyledButtons>
-
         </Wrapper>
-
     )
 };
 
