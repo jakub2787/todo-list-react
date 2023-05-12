@@ -1,13 +1,14 @@
+import { toAuthor, toTasks } from "../../routes";
 import { NavigationStyled, List, ListItem, NavigationLink } from "./styled";
 
 const Navigation = () => (
     <NavigationStyled>
         <List>
             <ListItem>
-                <NavigationLink to="/zadania">Zadania</NavigationLink>
+                <NavigationLink to={toTasks()}>Zadania</NavigationLink>
             </ListItem>
             <ListItem>
-                <NavigationLink to="./autor">O autorze</NavigationLink>
+                <NavigationLink to={toAuthor()}>O autorze</NavigationLink>
             </ListItem>
         </List>
     </NavigationStyled>
