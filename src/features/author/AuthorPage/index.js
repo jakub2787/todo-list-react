@@ -7,13 +7,12 @@ import AuthorPhoto from "./AuthorPhoto.jpg";
 const AuthorPage = () => (
     <Container>
         <Header title="O autorze" />
-
         <Section
             title="Jakub Woźny"
             body={
                 <>
                     <ContainerImage>
-                        <Image src={AuthorPhoto} alt="Moje zdjęcie"></Image>
+                        <Image src={AuthorPhoto} alt="Zdjęcie autora"></Image>
                     </ContainerImage>
                     <FlexItem>
                         <StyledContainer>
