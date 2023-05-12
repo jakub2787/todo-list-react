@@ -28,6 +28,7 @@ export const NavigationLink = styled(NavLink).attrs(() => ({
   &.active {
     font-weight: 700;
   }
+  
   &:hover {
     transform: scale(1.04);
   }

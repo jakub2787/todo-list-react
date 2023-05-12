@@ -18,7 +18,8 @@ export const StyledButtons = styled.button`
     padding: 15px;
     color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
-    transition: filter 0.3s;    
+    transition: filter 0.3s;
+        
     &:hover {
         filter: brightness(110%);
     }
