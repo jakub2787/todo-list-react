@@ -16,8 +16,9 @@ export const SectionBody = styled.div`
 `;
 
 export const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: row; 
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  margin-right: 10px;
   border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
   @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {

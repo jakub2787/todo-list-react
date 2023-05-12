@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-left: 45%;
+  align-items: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
       display: grid;
@@ -20,8 +18,7 @@ export const StyledButtons = styled.button`
     padding: 15px;
     color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
-    transition: filter 0.3s;
-
+    transition: filter 0.3s;    
     &:hover {
         filter: brightness(110%);
     }
